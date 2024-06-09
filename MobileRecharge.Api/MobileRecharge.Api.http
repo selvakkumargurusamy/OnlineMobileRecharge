@@ -1,0 +1,6 @@
+@MobileRecharge.Api_HostAddress = http://localhost:5000
+
+GET {{MobileRecharge.Api_HostAddress}}/Beneficiary/GetAll
+Accept: application/json
+
+###

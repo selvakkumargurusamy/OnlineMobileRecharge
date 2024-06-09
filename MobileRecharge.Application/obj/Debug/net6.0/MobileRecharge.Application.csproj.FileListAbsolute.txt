@@ -1,0 +1,15 @@
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\bin\Debug\net6.0\MobileRecharge.Application.deps.json
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\bin\Debug\net6.0\MobileRecharge.Application.dll
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\bin\Debug\net6.0\MobileRecharge.Application.pdb
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\bin\Debug\net6.0\MobileRecharge.Domain.dll
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\bin\Debug\net6.0\MobileRecharge.Domain.pdb
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.csproj.AssemblyReference.cache
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.AssemblyInfoInputs.cache
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.AssemblyInfo.cs
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.csproj.CoreCompileInputs.cache
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.csproj.CopyComplete
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.dll
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\refint\MobileRecharge.Application.dll
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\MobileRecharge.Application.pdb
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Application\obj\Debug\net6.0\ref\MobileRecharge.Application.dll

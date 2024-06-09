@@ -1,0 +1,14 @@
+﻿global using System.Text;
+global using Newtonsoft.Json;
+global using System.Net.Http.Headers;
+global using AutoMapper;
+global using MediatR;
+global using Microsoft.Extensions.Options;
+global using MobileRecharge.Application.Command;
+global using MobileRecharge.Application.HttpService;
+global using MobileRecharge.Application.Interfaces;
+global using MobileRecharge.Application.Queries;
+global using MobileRecharge.Domain.Configuration;
+global using MobileRecharge.Domain.Dtos;
+global using MobileRecharge.Domain.Interfaces.Repositories;
+global using MobileRecharge.Domain.Models;

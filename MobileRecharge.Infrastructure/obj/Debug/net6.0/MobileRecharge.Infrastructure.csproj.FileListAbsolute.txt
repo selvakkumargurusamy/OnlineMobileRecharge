@@ -1,0 +1,15 @@
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\bin\Debug\net6.0\MobileRecharge.Infrastructure.deps.json
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\bin\Debug\net6.0\MobileRecharge.Infrastructure.dll
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\bin\Debug\net6.0\MobileRecharge.Infrastructure.pdb
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\bin\Debug\net6.0\MobileRecharge.Domain.dll
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\bin\Debug\net6.0\MobileRecharge.Domain.pdb
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\MobileRecharge.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\MobileRecharge.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\MobileRecharge.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\MobileRecharge.Infrastructure.AssemblyInfo.cs
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\MobileRecharge.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\MobileRecharge.Infrastructure.csproj.CopyComplete
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\MobileRecharge.Infrastructure.dll
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\refint\MobileRecharge.Infrastructure.dll
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\MobileRecharge.Infrastructure.pdb
+C:\Users\sk25\source\repos\OnlineMobileRecharge\MobileRecharge.Infrastructure\obj\Debug\net6.0\ref\MobileRecharge.Infrastructure.dll

@@ -1,0 +1,17 @@
+global using AutoFixture.Xunit2;
+global using AutoMapper;
+global using Bogus;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.Extensions.Options;
+global using MobileRecharge.Api.Controllers;
+global using MobileRecharge.Application.Command;
+global using MobileRecharge.Application.HttpService;
+global using MobileRecharge.Application.Services;
+global using MobileRecharge.Application.Queries;
+global using MobileRecharge.Domain.Configuration;
+global using MobileRecharge.Domain.Dtos;
+global using MobileRecharge.Domain.Interfaces.Repositories;
+global using MobileRecharge.Domain.Models;
+global using Moq;
+global using Xunit;
