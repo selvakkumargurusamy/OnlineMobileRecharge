@@ -601,3 +601,4 @@
 /MobileRecharge.Infrastructure/bin/Debug/net8.0/MobileRecharge.Infrastructure.runtimeconfig.json
 /MobileRecharge.Infrastructure/obj/Debug/net8.0/MobileRecharge.Infrastructure.csproj.BuildWithSkipAnalyzers
 /MobileRecharge.Infrastructure/obj/Debug/net8.0/MobileRecharge.Infrastructure.genruntimeconfig.cache
+/.vs/OnlineMobileRecharge/FileContentIndex/*.vsidx
