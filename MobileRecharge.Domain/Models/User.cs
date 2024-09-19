@@ -16,6 +16,8 @@ public class User
 
     public bool IsVerified { get; set; }
 
-    [InverseProperty(nameof(Beneficiarie.User))]
-    public virtual ICollection<Beneficiarie> Beneficiaries { get; set; } = new List<Beneficiarie>();
+    public virtual ICollection<Beneficiarie> Beneficiaries { get; set; } = [];
+
+    public virtual ICollection<RechargeTransaction> RechargeTransactions { get; set; } = [];
+
 }

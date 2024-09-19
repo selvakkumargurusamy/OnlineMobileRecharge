@@ -40,7 +40,7 @@ public class Program
 
         services.AddAutoMapper(typeof(MappingProfile));
 
-        services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString(nameof(AppDbContext))!));
+        services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString(nameof(AppDbContext))!, b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
 
         services.AddHttpClient("Payment", client =>
         {

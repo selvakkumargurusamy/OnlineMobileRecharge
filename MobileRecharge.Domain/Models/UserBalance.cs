@@ -9,8 +9,5 @@ public class UserBalance
 
     public int Balance { get; set; }
 
-    // Navigational Properties
-    //public virtual int UserId { get; set; }
-
     public virtual User User { get; set; } = null!;
 }

@@ -14,7 +14,6 @@ public class Beneficiarie
 
     public bool IsActive { get; set; } = true;
 
-    [InverseProperty("Beneficiaries")]
     public virtual User User { get; set; } = null!;
 
 }
