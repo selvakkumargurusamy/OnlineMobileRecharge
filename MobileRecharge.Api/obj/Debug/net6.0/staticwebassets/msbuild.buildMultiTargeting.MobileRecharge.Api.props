@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\MobileRecharge.Api.props" />
-</Project>

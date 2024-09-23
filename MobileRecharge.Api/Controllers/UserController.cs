@@ -28,7 +28,7 @@ public class UserController : Controller
 
 
     [HttpGet]
-    [Route("{{userId}}")]
+    [Route("{userId}")]
     [ProducesResponseType(typeof(IEnumerable<BeneficiaryDto>), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.NotFound)]
     public async Task<IActionResult> GetUserBeneficiaries(int userId)

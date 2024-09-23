@@ -1,4 +1,6 @@
-﻿namespace MobileRecharge.Api.Controllers;
+﻿using System;
+
+namespace MobileRecharge.Api.Controllers;
 
 [ApiController]
 [Route("api/v1/[controller]")]
@@ -11,30 +13,31 @@ public class BeneficiaryController : Controller
         _mediator = mediator;
     }
 
-    [Route("user/{{userId}}/getAll")]
+    
+    [Route("user/{userId}/getAll")]
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<BeneficiaryDto>), (int)HttpStatusCode.OK)]
-    [ProducesResponseType((int)HttpStatusCode.NotFound)]
+    [ProducesResponseType((int)HttpStatusCode.NoContent)]
     public async Task<IActionResult> GetAll(int userId)
     {
 
         var query = new GetAllBeneficiariesByUserQueries(userId);
         var result = await _mediator.Send(query);
-        return result.Any() ? Ok(result) : NotFound();
+        return result.Any() ? Ok(result) : NoContent();
     }
 
-    [Route("{{id}}")]
+    [Route("{id}")]
     [HttpGet]
     [ProducesResponseType(typeof(BeneficiaryDto), (int)HttpStatusCode.OK)]
-    [ProducesResponseType((int)HttpStatusCode.NotFound)]
+    [ProducesResponseType((int)HttpStatusCode.NoContent)]
     public async Task<IActionResult> Get(int id)
     {
         var query = new GetBeneficiaryByIdQuery(id);
         var result = await _mediator.Send(query);
-        return result != null ? Ok(result) : NotFound();
+        return result != null ? Ok(result) : NoContent();
     }
 
-    [Route("user/{{userId}}/create")]
+    [Route("user/{userId}/create")]
     [HttpPost]
     [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.NotFound)]
@@ -45,7 +48,7 @@ public class BeneficiaryController : Controller
         return result > 0 ? Ok(result) : NotFound();
     }
 
-    [Route("{{id}}")]
+    [Route("{id}")]
     [HttpPut]
     [ProducesResponseType(typeof(bool), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.NotFound)]
@@ -56,7 +59,7 @@ public class BeneficiaryController : Controller
         return result ? Ok(result) : NotFound();
     }
 
-    [Route("{{id}}/delete")]
+    [Route("{id}/delete")]
     [HttpPut]
     [ProducesResponseType(typeof(bool), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.NotFound)]
