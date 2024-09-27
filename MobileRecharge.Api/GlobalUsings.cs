@@ -1,9 +1,13 @@
 ﻿global using System.Net;
 global using MediatR;
+global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.Extensions.Options;
+global using Microsoft.IdentityModel.Tokens;
+global using Microsoft.OpenApi.Models;
 global using MobileRecharge.Application.Command;
+global using MobileRecharge.Application.HttpService;
 global using MobileRecharge.Application.Interfaces;
 global using MobileRecharge.Application.Mapper;
 global using MobileRecharge.Application.Queries;

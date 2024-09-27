@@ -1,7 +1,6 @@
-﻿using System;
+﻿namespace MobileRecharge.Api.Controllers;
 
-namespace MobileRecharge.Api.Controllers;
-
+[Authorize]
 [ApiController]
 [Route("api/v1/[controller]")]
 public class BeneficiaryController : Controller

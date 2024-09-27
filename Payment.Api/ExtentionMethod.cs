@@ -1,6 +1,11 @@
-﻿
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using Payment.Api.Database;
 
-namespace MobileRecharge.Api
+namespace Payment.Api
 {
     public static class ExtentionMethod
     {
@@ -8,39 +13,12 @@ namespace MobileRecharge.Api
         {
             // Add services to the container.
 
-            services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
-
             services.AddControllers();
-            services.AddMvc();
-            services.AddMvc().AddApplicationPart(typeof(Program).Assembly);
-
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
 
-            services.AddAutoMapper(typeof(MappingProfile));
-
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString(nameof(AppDbContext))!, b => b.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
-
-            services.AddHttpClient("Payment", client =>
-            {
-                client.BaseAddress = new Uri("https://localhost:7072/");
-            });
-
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IBeneficiaryRepository, BeneficiaryRepository>();
-            services.AddScoped<IRechargeTransactionRepository, RechargeTransactionRepository>();
-
-            services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IBeneficiaryService, BeneficiaryService>();
-            services.AddScoped<IRechargeTransactionService, RechargeTransactionService>();
-            services.AddScoped<IHttpService, HttpService>();
-
-            services.AddMediatR(
-            cfg =>
-            {
-                cfg.RegisterServicesFromAssemblies(typeof(Program).Assembly, typeof(IUserService).Assembly);
-            });
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(configuration.GetConnectionString(nameof(AppDbContext))!));
         }
 
         public static IServiceCollection AddKeycloakAuthentication(this IServiceCollection services, IConfiguration configuration)
@@ -78,7 +56,7 @@ namespace MobileRecharge.Api
             services.AddSwaggerGen(c =>
             {
                 // See https://stackoverflow.com/questions/66265594/oauth-implementation-in-asp-net-core-using-swagger
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Mobile Recharge API v1.0", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Payment API v1.0", Version = "v1" });
                 c.AddSecurityDefinition("OAuth2", new OpenApiSecurityScheme
                 {
                     Type = SecuritySchemeType.OAuth2,

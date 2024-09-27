@@ -1,16 +1,16 @@
 using Microsoft.EntityFrameworkCore;
+using Payment.Api;
 using Payment.Api.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.ConfigureServices(builder.Configuration);
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString(nameof(AppDbContext))!));
+builder.Services.AddKeycloakAuthentication(builder.Configuration);
+
+builder.Services.AddSwaggerApplication(builder.Configuration);
 
 var app = builder.Build();
 
@@ -23,6 +23,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

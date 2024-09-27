@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Payment.Api.Database;
@@ -6,6 +7,7 @@ using Payment.Api.Model;
 
 namespace Payment.Api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[controller]")]
     public class PaymentController : ControllerBase

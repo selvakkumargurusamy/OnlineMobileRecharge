@@ -621,3 +621,4 @@
 /MobileRecharge.UnitTests/bin
 /Payment.Api/obj
 /Payment.Api/bin
+/.vs/OnlineMobileRecharge/v17/TestStore/0/*.testlog
